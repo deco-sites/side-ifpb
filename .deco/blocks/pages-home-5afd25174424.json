@@ -1,42 +1,187 @@
 {
-    "name": "Home",
-    "path": "/",
-    "sections": [
-      {
-        "__resolveType": "Header"
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "Hero",
+      "title": "<p>Welcome to Our Landing Page</p>",
+      "description": "Discover our innovative solutions designed to transform your business. Our cutting-edge technology and expert team are here to help you achieve your goals and stay ahead in today's competitive market.",
+      "placement": "right",
+      "cta": [
+        {
+          "href": "/contact",
+          "text": "Get Started",
+          "id": "main-cta"
+        },
+        {
+          "href": "/about",
+          "text": "Learn More",
+          "id": "secondary-cta",
+          "outline": true
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "title": "Welcome to Our Tech Hub",
+      "description": "O grupo SIDE - Semantics and Data Environments - é composto de pesquisadores (professores, técnicos e estudantes) que fazem trabalhos de pesquisa, extensão e inovação em temas associados a gerenciamento e uso de dados em ambientes diversos. Para isso, utiliza conceitos e tecnologias que envolvem o uso de semântica e trabalha com temas associados a Big Data, Integração de Dados, Análise de dados, Mineração de Dados, Aprendizado de Máquina, ETL, Dados Abertos e Conectados, Ontologias e Vocabulários, Publicação e Consumo de dados na Web, Proveniência e qualidade de Dados, entre outros.",
+      "placement": "right",
+      "cta": [
+        {
+          "href": "/products",
+          "text": "Explore Products",
+          "style": "Outline"
+        },
+        {
+          "href": "/blog",
+          "text": "Read Our Blog",
+          "style": "Ghost"
+        }
+      ],
+      "titlePlacement": "center",
+      "descriptionPlacement": "center",
+      "tagline": "Innovate. Connect. Thrive.",
+      "ctaPlacement": "center"
+    },
+    {
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "placement": "right",
+      "title": "Welcome to Our Tech Hub",
+      "titlePlacement": "left",
+      "description": "Discover the latest in cutting-edge technology at our one-stop shop for all your tech needs. From smartphones to smart home devices, we offer a curated selection of high-quality gadgets that will enhance your digital lifestyle. Our expert team is here to guide you through the ever-evolving world of technology, ensuring you find the perfect devices to suit your needs.",
+      "descriptionPlacement": "left",
+      "tagline": "Empowering Your Digital Life",
+      "image": "https://example.com/tech-hub-image.jpg",
+      "cta": [
+        {
+          "href": "/products",
+          "text": "Explore Our Products",
+          "style": "Outline"
+        },
+        {
+          "href": "/about-us",
+          "text": "Learn More",
+          "style": "Ghost"
+        }
+      ],
+      "ctaPlacement": "left"
+    },
+    {
+      "__resolveType": "site/sections/BlogPosts.tsx",
+      "title": "Latest Blog Posts",
+      "description": "Stay updated with our latest insights and news",
+      "posts": [
+        {
+          "title": "The Future of Web Development",
+          "author": "Jane Smith",
+          "excerpt": "Explore the latest trends and technologies shaping the future of web development.",
+          "image": "https://example.com/images/web-development.jpg",
+          "date": "2023-06-15",
+          "readingTime": "5 min read",
+          "tags": [
+            "Web Development",
+            "Technology",
+            "Trends"
+          ]
+        },
+        {
+          "title": "Optimizing Website Performance",
+          "author": "John Doe",
+          "excerpt": "Learn essential techniques to improve your website's speed and user experience.",
+          "image": "https://example.com/images/website-performance.jpg",
+          "date": "2023-06-10",
+          "readingTime": "7 min read",
+          "tags": [
+            "Performance",
+            "Optimization",
+            "User Experience"
+          ]
+        },
+        {
+          "title": "The Importance of SEO in 2023",
+          "author": "Sarah Johnson",
+          "excerpt": "Discover why SEO remains crucial for online visibility and how to stay ahead of the game.",
+          "image": "https://example.com/images/seo-importance.jpg",
+          "date": "2023-06-05",
+          "readingTime": "6 min read",
+          "tags": [
+            "SEO",
+            "Digital Marketing",
+            "Online Visibility"
+          ]
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Testimonials.tsx",
+      "title": "What Our Customers Say",
+      "slides": [
+        {
+          "content": {
+            "description": "I've been using this website for all my tech needs, and I'm consistently impressed. The product range is extensive, and the customer service is top-notch. Highly recommended!",
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/user-avatar-1.jpg",
+            "alt": "John Doe",
+            "name": "John Doe",
+            "position": "Tech Enthusiast"
+          }
+        },
+        {
+          "content": {
+            "description": "As a developer, I'm always on the lookout for the latest gadgets. This site never disappoints. The detailed product descriptions and fast shipping make it my go-to for all things tech.",
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/user-avatar-2.jpg",
+            "alt": "Jane Smith",
+            "name": "Jane Smith",
+            "position": "Software Developer"
+          }
+        },
+        {
+          "content": {
+            "description": "I love how easy it is to find exactly what I'm looking for on this site. The user experience is smooth, and the product quality is always excellent. It's my first choice for tech shopping.",
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/user-avatar-3.jpg",
+            "alt": "Mike Johnson",
+            "name": "Mike Johnson",
+            "position": "IT Professional"
+          }
+        }
+      ],
+      "arrows": true,
+      "dots": true,
+      "interval": 5
+    },
+    {
+      "__resolveType": "site/sections/Faq.tsx",
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions about our products and services",
+      "cta": {
+        "href": "/contact",
+        "text": "Still have questions? Contact us"
       },
-      {
-        "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p>Click here to tweak this text however you want.</p>",
-        "cta": [],
-        "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
-      },
-      {
-        "__resolveType": "site/sections/Logos.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx",
-        "placement": "right"
-      },
-      {
-        "__resolveType": "site/sections/BlogPosts.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Testimonials.tsx",
-        "arrows": true
-      },
-      {
-        "__resolveType": "site/sections/Faq.tsx"
-      },
-      {
-        "__resolveType": "Footer"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx",
-    "seo": {
-      "__resolveType": "website/sections/Seo/SeoV2.tsx"
+      "questions": [
+        {
+          "title": "What types of products do you offer?",
+          "answer": "We offer a wide range of tech products including headphones, smart TVs, fitness trackers, Bluetooth speakers, and foldable smartphones."
+        },
+        {
+          "title": "Do you offer warranty on your products?",
+          "answer": "Yes, all our products come with a standard manufacturer's warranty. The duration may vary depending on the product."
+        },
+        {
+          "title": "What is your return policy?",
+          "answer": "We offer a 30-day return policy for most items. Products must be in their original condition with all accessories included."
+        },
+        {
+          "title": "Do you ship internationally?",
+          "answer": "Yes, we ship to many countries worldwide. Shipping costs and delivery times may vary depending on the destination."
+        },
+        {
+          "title": "How can I track my order?",
+          "answer": "Once your order is shipped, you'll receive a tracking number via email. You can use this number to track your package on our website."
+        }
+      ]
     }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
   }
+}
