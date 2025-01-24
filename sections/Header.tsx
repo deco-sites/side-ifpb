@@ -26,15 +26,15 @@ export interface Nav {
 export default function Header({
   logo = {
     src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
+      "https://data.decoassets.com/side-ifpb/57bc1221-0277-419c-96d4-39faec517db9/logo-base.png",
     alt: "Logo",
   },
   navigation = {
     links: [
-      { label: "Home", url: "/" },
-      { label: "About us", url: "/" },
-      { label: "Princing", url: "/" },
-      { label: "Contact", url: "/" },
+      { label: "Início", url: "/" },
+      { label: "Sobre", url: "/" },
+      { label: "Pesquisadores", url: "/" },
+      { label: "Contato", url: "/" },
     ],
     buttons: [
       { id: "change-me-1", href: "/", text: "Change me", outline: false },
